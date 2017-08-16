@@ -12,7 +12,7 @@ Que você receberá sua chave de API criptografada
 Sua missão é descriptografá-la para conseguir fazer login em nossos sistemas e avisar o resto da equipe como resolver.
 Após fazer o login, você receberá o email de contato da equipe, junto com as instruções dos próximos passos.
 
-Para fazer login no sistema, basta fazer um POST na rota x.com/login usando seu email e chave de API como parâmetros:
+Para fazer login no sistema, basta fazer um POST na rota api.0x1.pw/login usando seu email e chave de API como parâmetros:
 ```
 POST /login HTTP/1.1
 Host: api.0x1.pw
