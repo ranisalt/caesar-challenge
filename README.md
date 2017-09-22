@@ -9,7 +9,9 @@ Para gerar sua API_KEY, basta fazer um GET na rota [api.0x1.pw/register](http://
 ```
 Que você receberá sua chave de API criptografada
 
-Sua missão é descriptografá-la para conseguir fazer login em nossos sistemas e avisar o resto da equipe como resolver.
+Sua missão é descriptografá-la para conseguir fazer login em nossos sistemas, de maneira **automatizada** para que qualquer pessoa consiga reverter sua própria chave de API utilizando sua ferramenta.<br/>
+*Sinta-se livre para usar a linguagem que quiser.*
+
 Após fazer o login, você receberá o email de contato da equipe, junto com as instruções dos próximos passos.
 
 Para fazer login no sistema, basta fazer um POST na rota [api.0x1.pw/login](http://api.0x1.pw/register) usando seu email e chave de API como parâmetros:
