@@ -1,19 +1,19 @@
 # Caesar Challenge
 Um de nossos desenvolvedores estava estudando sobre Cifra de César e resolveu aplicá-la no nosso algoritmo para gerar chaves de APIs.
 Mas, no meio dos seus estudos, acabou não prestando atenção e modificou todas as chaves de API do nosso banco de dados!<br/>
-Infelizmente, ele não lembra o algoritmo que usou, mas sabemos que toda chave de API, depois de descriptografadas, contém um texto legível como por exemplo `TresPratosDeTrigoParaTresTigresTristes`.<br/>
-Para gerar sua API_KEY, basta fazer um GET na rota [https://challenge.pagar.me/key](https://challenge.pagar.me/key) usando seu e-mail como parâmetro:
+Infelizmente ele não lembra o algoritmo que usou, mas sabemos que toda chave de API, depois de descriptografada, contém um texto legível; por exemplo: `TresPratosDeTrigoParaTresTigresTristes`.<br/>
+Para gerar sua API_KEY, basta fazer um GET na rota [https://challenge.pagar.me/key](https://challenge.pagar.me/key) usando o seu e-mail como parâmetro:
 ```
   GET /key?email=teste@teste.com HTTP/1.1
   Host: challenge.pagar.me
 ```
-Que você receberá sua chave de API criptografada
+Feito isso, você receberá a sua chave de API criptografada.
 
-Como uma pessoa que desenvolve, sua missão é descriptografá-la para conseguir fazer login em nossos sistemas, de maneira **automatizada** para que qualquer pessoa consiga reverter a própria chave de API utilizando sua ferramenta.<br/>
+Como uma pessoa que desenvolve, a sua missão é descriptografá-la para conseguir fazer login em nossos sistemas, de maneira **automatizada**, para que qualquer pessoa consiga reverter a própria chave de API utilizando a sua ferramenta.<br/>
 
 *Sinta-se livre para usar a linguagem que quiser.*
 
-Para fazer login no sistema, basta fazer um POST na rota [https://challenge.pagar.me/login](https://challenge.pagar.me/login) usando seu email e chave de API como parâmetros:
+Para fazer login no sistema, basta fazer um POST na rota [https://challenge.pagar.me/login](https://challenge.pagar.me/login) usando o seu e-mail e a chave de API como parâmetros:
 ```
 POST /login HTTP/1.1
 Host: challenge.pagar.me
